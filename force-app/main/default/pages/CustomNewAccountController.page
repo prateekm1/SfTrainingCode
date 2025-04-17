@@ -1,0 +1,12 @@
+<apex:page controller="UpsertAccount">
+  <apex:form >
+      <apex:pageBlock >
+          <apex:pageBlockSection >
+              <apex:inputField value="{!account.name}"/>
+              <apex:inputField value="{!account.industry}"/>
+              <apex:inputField value="{!account.phone}"/>
+          </apex:pageBlockSection>
+          <apex:commandButton value="Save" action="{!save}"/>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

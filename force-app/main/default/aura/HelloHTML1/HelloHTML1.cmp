@@ -1,0 +1,8 @@
+<aura:component >
+	<div class="white"> First Component </div>
+    <ul>
+    	<li class="red">I am Red</li>
+        <li class="blue">I am Blue</li>
+        <li class="green">I am Green</li>
+    </ul>
+</aura:component>

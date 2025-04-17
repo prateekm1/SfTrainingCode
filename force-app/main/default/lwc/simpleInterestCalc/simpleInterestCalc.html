@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Simple Interest Calculator">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter Principal" onchange={principalHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter Years" onchange={timeHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter Rate of Interest" onchange={rateHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-button  label="Calculate" onclick={calculate}></lightning-button>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-formatted-text value={output}></lightning-formatted-text>
+            </lightning-layout-item>
+            
+        </lightning-layout>
+    </lightning-card>"
+</template>

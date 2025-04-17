@@ -1,0 +1,7 @@
+<aura:component controller="OppServerController">
+    <aura:attribute name="opportunities" type="Opportunity[]"/>
+    <ui:button label="Get Opps" press="{!c.getOpps}"/>
+    <aura:iteration var="opp" items="{!v.opportunities}">
+    	<p>{!opp.Name}</p>
+    </aura:iteration>
+</aura:component>

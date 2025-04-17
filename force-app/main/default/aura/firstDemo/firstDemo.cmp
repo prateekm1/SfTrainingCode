@@ -1,0 +1,10 @@
+<aura:component>
+   <aura:attribute name="var1" type="Integer" Default="10" />
+    <aura:attribute name="var2" type="Integer" Default="30" />
+    <aura:attribute name="sum" type="integer"/>
+    {!v.var1} + {!v.var2} = {!v.sum}
+    <br/>
+    <ui:button label="click here" press="{!c.add}"/>
+	
+    
+</aura:component>

@@ -1,0 +1,17 @@
+<apex:page >
+
+  <h1> Enter your details </h1> <br/><br/>
+  <apex:form >
+  <apex:pageblock >
+      Name: <apex:inputText id="name"/><br/><br/>
+      Age: <apex:inputtext id="age"/><br/><br/>
+      UserName: <apex:inputText id="username"/><br/><br/>
+      Password: <apex:inputSecret id="password"/><br/><br/>
+      Are you Indian? <apex:inputCheckbox id="indian"/><br/><br/>
+      <apex:pageblockButtons >
+          <apex:commandButton value="Save"/>
+  </apex:pageblockButtons> 
+  </apex:pageblock>
+  </apex:form>  
+  
+</apex:page>

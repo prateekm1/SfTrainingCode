@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Shape Area Calc">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-small">
+                <lightning-input type="number" label="Enter Side of Square" onchange={sideChangeHandler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-small">
+                <lightning-input type="number" label="Enter length of Rectangle" onchange={lengthChangeHandler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-small">
+                <lightning-input type="number" label="Enter width of Rectangle" onchange={widthChangeHandler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-small">
+                <lightning-input type="number" label="Enter Digonal 1 for Rhombus" onchange={digonal1ChangeHandler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-small">
+                <lightning-input type="number" label="Enter Digonal 2 for Rhombus" onchange={diagonal2ChangeHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+               <lightning-button-group>
+                 <lightning-button label="Square" icon-position="Left" onclick={calculateSquare}></lightning-button>
+                 <lightning-button label="Rectangle" icon-position="center" onclick={calculateRectangle}></lightning-button>
+                 <lightning-button label="Rhombus" icon-position="right" onclick={calculateRhombus}></lightning-button>
+               </lightning-button-group>
+            </lightning-layout-item>
+            
+            <lightning-layout-item size="12" padding="around-small">
+               <lightning-formatted-text value={output}></lightning-formatted-text>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

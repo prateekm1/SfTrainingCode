@@ -1,0 +1,4 @@
+<aura:component controller="ServerSideControllerDemo">
+    <aura:attribute name="firstname" type="string" default="Prateek"/>
+    <ui:button label="Call Server" press="{!c.echo}"/>
+</aura:component>

@@ -1,0 +1,9 @@
+<apex:page >
+  <apex:pageBlock >
+      <apex:pagemessage summary="This is an Error example of Severity 0" Severity="error"></apex:pagemessage>
+      <apex:pagemessage summary="This is an Error example of Severity 3" Severity="error" strength="3"></apex:pagemessage>
+      <apex:pagemessage summary="This is a Warning example of Severity 2" Severity="warning" strength="2"></apex:pagemessage>
+      <apex:pagemessage summary="This is an Info example of Severity 1" Severity="info" strength="1"></apex:pagemessage>
+      <apex:pagemessage summary="This is an Confirm example of Severity 3" Severity="confirm" strength="3"></apex:pagemessage>
+  </apex:pageBlock>
+</apex:page>

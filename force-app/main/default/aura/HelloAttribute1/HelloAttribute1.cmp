@@ -1,0 +1,7 @@
+<aura:component >
+    <hr/>
+    <p>Second Component</p>
+    <aura:attribute name="val" type="string" default="Udemy"/>
+    <hr/>
+    Welcome to {!v.val}
+</aura:component>

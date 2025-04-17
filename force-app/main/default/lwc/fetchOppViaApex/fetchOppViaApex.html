@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Get Opp via Apex">
+        <p><lightning-input type="number" label="Enter num of records to fetch" onchange={numberChange}></lightning-input></p>
+        <p><lightning-button label="Get Opp" onclick={handleClick}></lightning-button></p>
+
+        <ul>
+            <template if:true={responseRecived}>
+                <template for:each={opps} for:item="opp">
+                    <li key={opp.id}>
+                        <div class="slds-p-around_small">
+                            <lightning-tile label={opp.Name}>
+                                <p class="slds-truncate" title={opp.StageName}>{opp.StageName}</p>
+                            </lightning-tile>
+                        </div>
+                    </li>
+                </template>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

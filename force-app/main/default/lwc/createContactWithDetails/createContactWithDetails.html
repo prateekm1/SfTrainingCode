@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Contact Creation and View">
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="around-small">
+                <lightning-input name="Enter Name" label="Name" onchange={handleNameChange}></lightning-input>
+                <lightning-input name="Enter Phone" label="Phone" onchange={handlePhoneChange}></lightning-input>
+                <lightning-input name="Enter Email" label="Email" onchange ={handleEmailChange}></lightning-input>
+                <lightning-button label="Create Contact" onclick={createContact} variant="brand"></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="6" padding="around-small">
+                <lightning-formatted-text value={retContactName}></lightning-formatted-text>
+                <lightning-formatted-phone value={retContactPhone}></lightning-formatted-phone>
+                <lightning-formatted-email value={retContactEmail}></lightning-formatted-email>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

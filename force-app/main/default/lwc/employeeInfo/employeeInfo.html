@@ -1,0 +1,21 @@
+<template>
+    <template if:true={show}>
+        <lightning-card title="Employee Info">
+            <div class="slds-p-around_medium">
+                <lightning-input label="Emp Name" value={name} onchange={nameChange}></lightning-input>
+                <lightning-input label="Emp Age" value={age} onchange={ageChange}></lightning-input>
+                <lightning-input label="Emp Salary" value={salary} onchange={salaryChange}></lightning-input>
+                <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+            </div>
+        </lightning-card>
+    </template>
+    <template if:false={show}>
+        <lightning-card title="Employee Details">
+            <div class="slds-p-around_medium">
+                <p>Employee Name: {name}</p>
+                <p>Employee Age: {age}</p>
+                <p>Employee Salary: {salary}</p>
+            </div>
+        </lightning-card>
+    </template>
+</template>

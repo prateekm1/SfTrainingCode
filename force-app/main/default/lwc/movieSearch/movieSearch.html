@@ -1,5 +1,5 @@
 <template>
-<!--filter section-->
+<!-- filter section -->
 <div class="filterStyle">
     <lightning-layout title="Movie Search" horizontal-align="center">
         <lightning-layout-item padding="around-small" size="3">
@@ -34,7 +34,7 @@
     </lightning-layout>
 </div>
     <template lwc:if={displaySearchResult}>
-        <!--Display Section-->
+        <!-- Display Section -->
         <div class="slds-var-m-top_large slds-scrollable_y displayStyle slds-box">
             <lightning-layout horizontal-align="center" multiple-rows="true">
                 <template for:each={searchResult} for:item="searchItem">

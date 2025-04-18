@@ -47,7 +47,7 @@ export default class MovieSearch extends LightningElement {
 
     //method to search entered movie name 
     async searchMovie(){
-        const URL = `http://www.omdbapi.com/?apikey=be869937&s=${this.selectedSearch}&type=${this.selectedType}&page=${this.selectedPageNo}`;
+        const URL = `https://www.omdbapi.com/?apikey=be869937&s=${this.selectedSearch}&type=${this.selectedType}&page=${this.selectedPageNo}`;
         const res = await fetch(URL);
         const data = await res.json();
         console.log("Movie search output ", data);
